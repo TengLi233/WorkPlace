@@ -1,6 +1,28 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	About
+{% endblock %}
+
+{% block body_block %}
+	<h1>This tutorial has been put together by LI TENG.</h1>
+		<div>
+			 <img src="{{ MEDIA_URL }}cat.jpg" />
+		</div>
+		<div>
+			<img src="{% static 'images/rango.jpg' %}"/>
+		</div>
+{% endblock %}
+
+
+
+
+
+<!--- he code below is pre-chapter 8>
 <!DOCTYPE html>
 
-{% load staticfiles %} <!--new line -->
+{% load staticfiles %}
 
 <html>
 	<head>
@@ -20,3 +42,5 @@
 		</div>
 	</body>
 </html>
+
+-->
